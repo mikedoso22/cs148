@@ -5,6 +5,8 @@ include "top.php";
 $query = 'select fldDepartment from tblCourses where fldCourseName like "Introduction%" ';
 $info2 = $thisDatabaseReader->select($query, "", 1, 0, 2, 0, false, false);
 echo count($info2);
+
+echo '<p>'.$query.'</p>';
 print '<table>';
 $columns = 1;
 //now print out each record
