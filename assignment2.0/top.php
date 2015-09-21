@@ -5,7 +5,7 @@ require_once('lib/custom-functions.php');
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Assignment 1.0</title>
+        <title>Assignment 2.0</title>
         <meta charset="utf-8">
         <meta name="author" content="Mike Cardoso">
         <meta name="description" content="Silly Bob">

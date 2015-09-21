@@ -1,1 +1,4 @@
-pass.php
+bin/pass.php
+.htaccess
+nbproject/
+.user.ini
