@@ -34,11 +34,13 @@ function securityCheck($path_parts, $yourURL, $form = false) {
     $whiteListPages[] = "q10.php";
     $whiteListPages[] = "q11.php";
     $whiteListPages[] = "q12.php";
+    $whiteListPages[] = "select.php";
 
     //add all the folders to this array
     $whiteListFolders = array();
     $whiteListFolders[] = "/cs148/";
     $whiteListFolders[] = "/cs148dev/";
+    $whiteListFolders[] = "/cs148dev/assignment2.0/query";
     
     
     $whiteListFolders[] = "/cs148/assignment1.0";
