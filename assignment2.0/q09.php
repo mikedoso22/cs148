@@ -5,6 +5,7 @@ include "top.php";
 $query = 'select distinct fldBuilding, count(fldNumStudents), fldDays from tblSections where fldDays like "%W%" group by fldBuilding order by count(fldNumStudents) desc ';
 $info2 = $thisDatabaseReader->select($query, "", 1, 1, 2, 0, false, false);
 echo count($info2);
+echo '<p>'.$query.'</p>';
 print '<table>';
 $columns = 3;
 //now print out each record\
