@@ -40,7 +40,7 @@ function securityCheck($path_parts, $yourURL, $form = false) {
     $whiteListFolders = array();
     $whiteListFolders[] = "/cs148/";
     $whiteListFolders[] = "/cs148dev/";
-    $whiteListFolders[] = "/cs148dev/assignment2.0/query";
+    $whiteListFolders[] = "/cs148dev/assignment2.0/query/";
     
     
     $whiteListFolders[] = "/cs148/assignment1.0";
