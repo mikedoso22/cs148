@@ -1,0 +1,1 @@
+select * from tblSections where fldStart = "10:50:00" and fldBuilding = "Votey" and fnkTeacherNetId = "rerickso"

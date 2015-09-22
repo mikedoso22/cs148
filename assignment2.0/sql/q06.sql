@@ -1,0 +1,1 @@
+select fldCourseName from tblCourses where fldDepartment not like "CS" and fldCourseName like "%data%" 

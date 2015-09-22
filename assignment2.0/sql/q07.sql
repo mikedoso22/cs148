@@ -1,0 +1,1 @@
+select distinct fldDepartment from tblCourses
