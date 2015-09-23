@@ -5,7 +5,6 @@ include "top.php";
 $query = 'select distinct fldDepartment from tblCourses ';
 $info2 = $thisDatabaseReader->select($query, "", 0, 0, 0, 0, false, false);
 echo count($info2);
-echo '<p>'.$query.'</p>';
 print '<table>';
 $columns = 1;
 //now print out each record\

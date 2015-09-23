@@ -5,7 +5,6 @@ include "top.php";
 $query = 'select * from tblSections where fldStart = "10:50:00" and fldBuilding = "Votey" and fnkTeacherNetId = "rerickso"';
 $info2 = $thisDatabaseReader->select($query, "", 1, 2, 6, 0, false, false);
 echo count($info2);
-echo '<p>'.$query.'</p>';
 print '<table>';
 $columns = 12;
 //now print out each record

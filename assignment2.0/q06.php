@@ -5,7 +5,6 @@ include "top.php";
 $query = 'select fldCourseName from tblCourses where fldDepartment not like "CS" and fldCourseName like "%data%" ';
 $info2 = $thisDatabaseReader->select($query, "", 1, 2, 4, 0, false, false);
 echo count($info2);
-echo '<p>'.$query.'</p>';
 print '<table>';
 $columns = 1;
 //now print out each record

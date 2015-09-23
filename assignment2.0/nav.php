@@ -15,12 +15,6 @@
         } else {
             print '<li><a href="tables.php">Display Tables</a></li>';
         }
-                
-        if ($path_parts['filename'] == "select") {
-            print '<li class="activePage">Select</li>';
-        } else {
-            print '<li><a href="select.php">Select</a></li>';
-        }
         
         if ($path_parts['filename'] == "q01") {
             print '<li class="activePage">Q01</li>';
@@ -80,6 +74,18 @@
             print '<li class="activePage">Q10</li>';
         } else {
             print '<li><a href="q10.php">Q10</a></li>';
+        }
+        
+        if ($path_parts['filename'] == "q11") {
+            print '<li class="activePage">Q11</li>';
+        } else {
+            print '<li><a href="q11.php">Q11</a></li>';
+        }
+        
+        if ($path_parts['filename'] == "q12") {
+            print '<li class="activePage">Q12</li>';
+        } else {
+            print '<li><a href="q12.php">Q12</a></li>';
         }
         
         /*if ($path_parts['filename'] == "populate-table.php") {

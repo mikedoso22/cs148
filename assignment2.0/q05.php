@@ -5,7 +5,6 @@ include "top.php";
 $query = 'select fldFirstname, fldLastName from tblTeachers where pmkNetId like "r%o" ';
 $info2 = $thisDatabaseReader->select($query, "", 1, 0, 2, 0, false, false);
 echo count($info2);
-echo '<p>'.$query.'</p>';
 print '<table>';
 $columns = 2;
 //now print out each record
