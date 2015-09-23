@@ -5,6 +5,7 @@ include "top.php";
 $query = 'select distinct count(fldNumStudents) from tblSections where fldNumStudents > fldMaxStudents';
 $info2 = $thisDatabaseReader->select($query, "", 1, 0, 0, 1, false, false);
 echo count($info2);
+echo '<p>'.$query.'</p>';
 print '<table>';
 $columns = 3;
 //now print out each record\
