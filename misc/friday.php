@@ -2,8 +2,13 @@
 
 
 include "top.php";
+<<<<<<< HEAD
+$query = 'SELECT pmkStudentId, fldFirstName, fldLastName, fldStreetAddress, fldCity, fldState, fldZip, fldGender FROM tblStudents ORDER BY fldLastName, fldFirstName LIMIT 10 offset 1000';
+$info2 = $thisDatabaseReader->select($query, "", 0,1, 0, 0, false, false);
+=======
 $query = 'SELECT pmkStudentId, fldFirstName, fldLastName, fldStreetAddress, fldCity, fldState, fldZip, fldGender FROM tblStudents ORDER BY fldLastName, fldFirstName';
 $info2 = $thisDatabaseReader->query($query, "", 0,0, 0, 0, false, false);
+>>>>>>> 89864fea9f0510ba364b077303edc883ecaf3b0a
 echo count($info2);
 echo '<p>'.$query.'</p>';
 print '<table>';
