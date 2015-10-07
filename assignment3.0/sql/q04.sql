@@ -1,0 +1,1 @@
+SELECT DISTINCT tblSections.fldCRN, tblStudents.fldLastName, tblStudents.fldFirstName FROM tblSections JOIN tblEnrolls ON tblSections.fldCRN=tblEnrolls.fnkSectionId JOIN tblStudents ON pmkStudentId = fnkStudentId WHERE fldCRN=95470 OR fldCRN=91954

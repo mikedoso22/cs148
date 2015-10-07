@@ -1,0 +1,1 @@
+SELECT DISTINCT tblCourses.fldCourseName, tblEnrolls.fldGrade FROM tblCourses JOIN tblEnrolls ON tblCourses.pmkCourseId=tblEnrolls.fnkCourseId WHERE fldGrade=100 ORDER BY fldCourseName

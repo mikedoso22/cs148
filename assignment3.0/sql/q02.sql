@@ -1,0 +1,1 @@
+SELECT DISTINCT tblTeachers.fldLastName, tblTeachers.fldFirstName, tblSections.fldDays, tblSections.fldStart, tblSections.fldStop FROM tblTeachers JOIN tblSections ON tblTeachers.pmkNetId=tblSections.fnkTeacherNetId WHERE fnkTeacherNetId="rsnapp" ORDER BY fldStart

@@ -1,0 +1,1 @@
+SELECT fldFirstName, fldPhone, fldSalary FROM tblTeachers WHERE fldSalary < 135376.1980
