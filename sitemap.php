@@ -17,8 +17,11 @@ and open the template in the editor.
     <body>
         <p><a href="/cs148dev/assignment1.0/index.php">Assignment 1.0</a></p>
         <p><a href="/cs148dev/assignment2.0/index.php">Assignment 2.0</a></p>
-        <?php
-        // put your code here
-        ?>
+        <p><a href="/cs148dev/assignment3.0/index.php">Assignment 3.0</a></p>
+        
+        <p><a href="/cs148/assignment1.0/index.php">Assignment 1.0</a></p>
+        <p><a href="/cs148/assignment2.0/index.php">Assignment 2.0</a></p>
+        <p><a href="/cs148/assignment3.0/index.php">Assignment 3.0</a></p>
+        
     </body>
 </html>
