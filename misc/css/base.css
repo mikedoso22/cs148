@@ -6,7 +6,7 @@
 /*------------------------   standard elements  ----------------------------- */
 body{
     margin: 0 5% 0 5%;
-    background: #527578;
+    background: #FFFFFF;
 }
 article{
     padding: 2em;
@@ -93,3 +93,6 @@ nav ol li{
     text-align: left;
 }
 
+ tr:hover{
+    background-color: #FF0000;
+}

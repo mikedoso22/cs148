@@ -2,13 +2,14 @@
 
 
 include "top.php";
-<<<<<<< HEAD
-$query = 'SELECT pmkStudentId, fldFirstName, fldLastName, fldStreetAddress, fldCity, fldState, fldZip, fldGender FROM tblStudents ORDER BY fldLastName, fldFirstName LIMIT 10 offset 1000';
+if(isset($_GET['varOffset'])){
+    $varOffset = $_GET['varOffset'];
+}
+$varLimit = 10;
+
+
+$query = 'SELECT pmkStudentId, fldFirstName, fldLastName, fldStreetAddress, fldCity, fldState, fldZip, fldGender FROM tblStudents ORDER BY fldLastName, fldFirstName LIMIT ' . $varLimit . ' OFFSET ' . $varOffset;
 $info2 = $thisDatabaseReader->select($query, "", 0,1, 0, 0, false, false);
-=======
-$query = 'SELECT pmkStudentId, fldFirstName, fldLastName, fldStreetAddress, fldCity, fldState, fldZip, fldGender FROM tblStudents ORDER BY fldLastName, fldFirstName';
-$info2 = $thisDatabaseReader->query($query, "", 0,0, 0, 0, false, false);
->>>>>>> 89864fea9f0510ba364b077303edc883ecaf3b0a
 echo count($info2);
 echo '<p>'.$query.'</p>';
 print '<table>';
@@ -30,6 +31,8 @@ foreach ($info2 as $rec) {
 }
 // all done
 print '</table>';
+$varOffset +=10;
+print '<p><a href="https://mcardoso.w3.uvm.edu/cs148dev/misc/friday.php?varOffset=' . $varOffset . '">Next </a></p>'; 
 
 include "footer.php";
 ?>
